@@ -14,9 +14,9 @@ void setup() {
 }
 
 void loop() {
-  for (int pin=9; pin<=11 ;pin++){ //Creamos el primer bucle for indicando desde el pin de inicio del bucle hasta qué pin tiene que llegar
-  for (int brillo=0; brillo<=255; brillo++){ //Creamos el segundo bucle for indicando desde el comienzo del brillo hasta el final. Como es una señal analógica empezara por el 0 y terminara en 255
-    analogWrite(pin, brillo); //Indicamos que queremos la variable pin para el led y la variable brillo para el valor de encendido del led
+  for (int pin=9; pin<=11 ;pin++){ //Creamos el primer bucle for indicando desde el pin de inicio del bucle hasta qué pin debe de llegar
+  for (int brillo=0; brillo<=255; brillo++){ //Creamos el segundo bucle for indicando desde el comienzo del brillo hasta el final. Como es una señal analógica empezara por el "0" y terminara en "255"
+    analogWrite(pin, brillo); //Indicamos que queremos la variable "pin" para el led y la variable "brillo" para el valor de encendido del led
     delay(25); //Tiempo de espera para repetir acción
   }
   }
