@@ -21,5 +21,4 @@ void loop() {
     }
     delay(50); 
   }
-  uestado = estado;
 }
