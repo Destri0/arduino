@@ -3,7 +3,8 @@ const int led1 = 9;
 
 int estado = 0;     
 int uestado = 0;  
-int brillo = LOW; 
+boolean brillo = false;
+
 
 void setup() {
   pinMode(pul, INPUT);
@@ -15,8 +16,9 @@ void loop() {
   if (estado != uestado) {
     if (estado == HIGH) {
       while (digitalRead(pul) == HIGH) {
+        delay(100);
       }
-      brillo = (brillo == LOW) ? HIGH : LOW;
+      brillo = !brillo;
       digitalWrite(led1, brillo);
     }
     delay(50); 
