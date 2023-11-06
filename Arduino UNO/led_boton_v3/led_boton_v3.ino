@@ -1,6 +1,5 @@
 const int pul = 7;  
-const int led1 = 9;   
-int estado = 0;      
+const int led1 = 9;        
 boolean brillo = false;
 
 void setup() {
@@ -9,8 +8,8 @@ void setup() {
 }
 
 void loop() {
-  estado = digitalRead(pul);
-    if (estado == HIGH) {
+
+    if (digitalRead(pul)) {
       while (digitalRead(pul) == HIGH) {
         delay(5);
       }
