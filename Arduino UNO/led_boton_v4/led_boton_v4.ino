@@ -20,10 +20,10 @@ void loop() {
 */
   if (digitalRead(pul) == HIGH) { // Leemos los datos del pulsador y indicamos que si se encuentra ("HIGH" = precionado)
     /*Si "brillo" es false, el LED se apaga y el brillo se establece en false*/
-    if (brillo) { 
+    if (brillo == true) { 
       brillo = false;
       digitalWrite(led1, LOW);
-    } else {
+    } else if (brillo == false) {
     /*Si "brillo" es true, el LED se enciende y el brillo se establece en true*/
       brillo = true; 
       digitalWrite(led1, HIGH);
