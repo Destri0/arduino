@@ -1,3 +1,6 @@
+/*
+--Codigo realizado por Fran
+*/
 int contador = 0;
 void setup() {
   Serial.begin(9600);
