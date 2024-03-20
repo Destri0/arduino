@@ -1,5 +1,5 @@
 /*
---Code develop by Fran.
+--Code develop by Fran
 */
 // Declaramos todos los pines de los leds. Llamando a cada pin por un nombre
 const int led1 = 9;
