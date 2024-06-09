@@ -4,8 +4,8 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
-const char* wifid = "HUAWEI-WSh9";
-const char* contra = "BARCCavS";
+const char* wifid = "";
+const char* contra = "";
 WebServer server(80);
 bool restado = LOW;
 bool restado2 = LOW;
